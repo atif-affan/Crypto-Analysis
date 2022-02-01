@@ -1,0 +1,30 @@
+PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - CoinpaprikaAPI (2.2):
+    - CoinpaprikaAPI/Client (= 2.2)
+  - CoinpaprikaAPI/Client (2.2):
+    - CoinpaprikaAPI/Networking
+  - CoinpaprikaAPI/Networking (2.2)
+  - CryptoCurrencyKit (0.3.1)
+
+DEPENDENCIES:
+  - Charts
+  - CoinpaprikaAPI
+  - CryptoCurrencyKit
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - CoinpaprikaAPI
+    - CryptoCurrencyKit
+
+SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  CoinpaprikaAPI: 30093dd2ece7d8ecea8c0d8671f704e7a6095f0b
+  CryptoCurrencyKit: 5c78da2dfb845e2feddb519b56169ab39f117ca1
+
+PODFILE CHECKSUM: e70c300327ba5a69a1f53c3b289eea5cb2a1f479
+
+COCOAPODS: 1.11.2

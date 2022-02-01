@@ -1,0 +1,1336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		346F99391961F1912756A7F8 /* Pods_CryptoAnalysis_CryptoAnalysisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41A400905780033A7A09306 /* Pods_CryptoAnalysis_CryptoAnalysisUITests.framework */; };
+		649E299F277AC1D40023181D /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = 649E299E277AC1D40023181D /* CSV */; };
+		649E29A5277B1B650023181D /* polynomialRegression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E29A4277B1B650023181D /* polynomialRegression.swift */; };
+		649E29A7277B1B910023181D /* PRMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E29A6277B1B910023181D /* PRMatrix.swift */; };
+		649E29A9277C19B20023181D /* quantityAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E29A8277C19B20023181D /* quantityAdd.swift */; };
+		649E29AD277C9CF40023181D /* addQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E29AC277C9CF40023181D /* addQuantity.swift */; };
+		649E29AF277F83B10023181D /* calculationDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E29AE277F83B10023181D /* calculationDisplay.swift */; };
+		649E2B2E278416CC0023181D /* Coinbase_manUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AB4278416C60023181D /* Coinbase_manUSD_dailydata.csv */; };
+		649E2B2F278416CC0023181D /* Coinbase_bntUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AB5278416C60023181D /* Coinbase_bntUSD_dailydata.csv */; };
+		649E2B30278416CC0023181D /* Coinbase_bchUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AB6278416C70023181D /* Coinbase_bchUSD_dailydata.csv */; };
+		649E2B31278416CC0023181D /* Coinbase_zrxUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AB7278416C70023181D /* Coinbase_zrxUSD_dailydata.csv */; };
+		649E2B32278416CC0023181D /* Coinbase_forUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AB8278416C70023181D /* Coinbase_forUSD_dailydata.csv */; };
+		649E2B33278416CC0023181D /* Coinbase_icpUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AB9278416C70023181D /* Coinbase_icpUSD_dailydata.csv */; };
+		649E2B34278416CC0023181D /* Coinbase_wbtUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ABA278416C70023181D /* Coinbase_wbtUSD_dailydata.csv */; };
+		649E2B35278416CC0023181D /* Coinbase_uniUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ABB278416C70023181D /* Coinbase_uniUSD_dailydata.csv */; };
+		649E2B36278416CC0023181D /* Coinbase_oxtUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ABC278416C70023181D /* Coinbase_oxtUSD_dailydata.csv */; };
+		649E2B37278416CC0023181D /* Coinbase_zecUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ABD278416C70023181D /* Coinbase_zecUSD_dailydata.csv */; };
+		649E2B38278416CC0023181D /* Coinbase_axsUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ABE278416C70023181D /* Coinbase_axsUSD_dailydata.csv */; };
+		649E2B39278416CC0023181D /* Coinbase_ustUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ABF278416C70023181D /* Coinbase_ustUSD_dailydata.csv */; };
+		649E2B3A278416CC0023181D /* Coinbase_1inUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC0278416C70023181D /* Coinbase_1inUSD_dailydata.csv */; };
+		649E2B3B278416CC0023181D /* Coinbase_alcUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC1278416C70023181D /* Coinbase_alcUSD_dailydata.csv */; };
+		649E2B3C278416CC0023181D /* Coinbase_algUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC2278416C70023181D /* Coinbase_algUSD_dailydata.csv */; };
+		649E2B3D278416CC0023181D /* Coinbase_bonUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC3278416C70023181D /* Coinbase_bonUSD_dailydata.csv */; };
+		649E2B3E278416CC0023181D /* Coinbase_umaUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC4278416C70023181D /* Coinbase_umaUSD_dailydata.csv */; };
+		649E2B3F278416CC0023181D /* Coinbase_asmUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC5278416C70023181D /* Coinbase_asmUSD_dailydata.csv */; };
+		649E2B40278416CC0023181D /* Coinbase_truUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC6278416C70023181D /* Coinbase_truUSD_dailydata.csv */; };
+		649E2B41278416CC0023181D /* Coinbase_yfiUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC7278416C70023181D /* Coinbase_yfiUSD_dailydata.csv */; };
+		649E2B42278416CC0023181D /* Coinbase_vgxUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC8278416C70023181D /* Coinbase_vgxUSD_dailydata.csv */; };
+		649E2B43278416CC0023181D /* Coinbase_lrcUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AC9278416C70023181D /* Coinbase_lrcUSD_dailydata.csv */; };
+		649E2B44278416CC0023181D /* Coinbase_sklUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ACA278416C70023181D /* Coinbase_sklUSD_dailydata.csv */; };
+		649E2B45278416CC0023181D /* Coinbase_rlcUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ACB278416C70023181D /* Coinbase_rlcUSD_dailydata.csv */; };
+		649E2B46278416CC0023181D /* Coinbase_supUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ACC278416C70023181D /* Coinbase_supUSD_dailydata.csv */; };
+		649E2B47278416CC0023181D /* Coinbase_speUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ACD278416C70023181D /* Coinbase_speUSD_dailydata.csv */; };
+		649E2B48278416CC0023181D /* Coinbase_trbUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ACE278416C80023181D /* Coinbase_trbUSD_dailydata.csv */; };
+		649E2B49278416CC0023181D /* Coinbase_grtUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ACF278416C80023181D /* Coinbase_grtUSD_dailydata.csv */; };
+		649E2B4A278416CC0023181D /* Coinbase_rarUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD0278416C80023181D /* Coinbase_rarUSD_dailydata.csv */; };
+		649E2B4B278416CC0023181D /* Coinbase_zenUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD1278416C80023181D /* Coinbase_zenUSD_dailydata.csv */; };
+		649E2B4C278416CC0023181D /* Coinbase_triUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD2278416C80023181D /* Coinbase_triUSD_dailydata.csv */; };
+		649E2B4D278416CC0023181D /* Coinbase_croUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD3278416C80023181D /* Coinbase_croUSD_dailydata.csv */; };
+		649E2B4E278416CC0023181D /* Coinbase_btrUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD4278416C80023181D /* Coinbase_btrUSD_dailydata.csv */; };
+		649E2B4F278416CC0023181D /* Coinbase_aglUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD5278416C80023181D /* Coinbase_aglUSD_dailydata.csv */; };
+		649E2B50278416CC0023181D /* Coinbase_traUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD6278416C80023181D /* Coinbase_traUSD_dailydata.csv */; };
+		649E2B51278416CC0023181D /* Coinbase_dotUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD7278416C80023181D /* Coinbase_dotUSD_dailydata.csv */; };
+		649E2B52278416CC0023181D /* Coinbase_enjUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD8278416C80023181D /* Coinbase_enjUSD_dailydata.csv */; };
+		649E2B53278416CC0023181D /* Coinbase_rlyUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AD9278416C80023181D /* Coinbase_rlyUSD_dailydata.csv */; };
+		649E2B54278416CC0023181D /* Coinbase_snxUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ADA278416C80023181D /* Coinbase_snxUSD_dailydata.csv */; };
+		649E2B55278416CC0023181D /* Coinbase_repUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ADB278416C80023181D /* Coinbase_repUSD_dailydata.csv */; };
+		649E2B56278416CC0023181D /* Coinbase_cvcUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ADC278416C80023181D /* Coinbase_cvcUSD_dailydata.csv */; };
+		649E2B57278416CC0023181D /* Coinbase_ddxUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ADD278416C80023181D /* Coinbase_ddxUSD_dailydata.csv */; };
+		649E2B58278416CC0023181D /* Coinbase_polUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ADE278416C80023181D /* Coinbase_polUSD_dailydata.csv */; };
+		649E2B59278416CC0023181D /* Coinbase_kncUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2ADF278416C80023181D /* Coinbase_kncUSD_dailydata.csv */; };
+		649E2B5A278416CC0023181D /* Coinbase_balUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE0278416C80023181D /* Coinbase_balUSD_dailydata.csv */; };
+		649E2B5B278416CC0023181D /* Coinbase_rbnUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE1278416C80023181D /* Coinbase_rbnUSD_dailydata.csv */; };
+		649E2B5C278416CC0023181D /* Coinbase_dntUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE2278416C80023181D /* Coinbase_dntUSD_dailydata.csv */; };
+		649E2B5D278416CC0023181D /* Coinbase_covUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE3278416C80023181D /* Coinbase_covUSD_dailydata.csv */; };
+		649E2B5E278416CC0023181D /* Coinbase_xlmUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE4278416C90023181D /* Coinbase_xlmUSD_dailydata.csv */; };
+		649E2B5F278416CC0023181D /* Coinbase_mdtUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE5278416C90023181D /* Coinbase_mdtUSD_dailydata.csv */; };
+		649E2B60278416CC0023181D /* Coinbase_rgtUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE6278416C90023181D /* Coinbase_rgtUSD_dailydata.csv */; };
+		649E2B61278416CC0023181D /* Coinbase_gyeUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE7278416C90023181D /* Coinbase_gyeUSD_dailydata.csv */; };
+		649E2B62278416CC0023181D /* Coinbase_comUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE8278416C90023181D /* Coinbase_comUSD_dailydata.csv */; };
+		649E2B63278416CC0023181D /* Coinbase_banUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AE9278416C90023181D /* Coinbase_banUSD_dailydata.csv */; };
+		649E2B64278416CC0023181D /* Coinbase_ankUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AEA278416C90023181D /* Coinbase_ankUSD_dailydata.csv */; };
+		649E2B65278416CC0023181D /* Coinbase_omgUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AEB278416C90023181D /* Coinbase_omgUSD_dailydata.csv */; };
+		649E2B66278416CC0023181D /* Coinbase_renUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AEC278416C90023181D /* Coinbase_renUSD_dailydata.csv */; };
+		649E2B67278416CC0023181D /* Coinbase_perUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AED278416C90023181D /* Coinbase_perUSD_dailydata.csv */; };
+		649E2B68278416CC0023181D /* Coinbase_blzUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AEE278416C90023181D /* Coinbase_blzUSD_dailydata.csv */; };
+		649E2B69278416CC0023181D /* Coinbase_dasUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AEF278416C90023181D /* Coinbase_dasUSD_dailydata.csv */; };
+		649E2B6A278416CC0023181D /* Coinbase_clvUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF0278416C90023181D /* Coinbase_clvUSD_dailydata.csv */; };
+		649E2B6B278416CC0023181D /* Coinbase_crvUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF1278416C90023181D /* Coinbase_crvUSD_dailydata.csv */; };
+		649E2B6C278416CC0023181D /* Coinbase_lcxUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF2278416C90023181D /* Coinbase_lcxUSD_dailydata.csv */; };
+		649E2B6D278416CC0023181D /* Coinbase_iotUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF3278416C90023181D /* Coinbase_iotUSD_dailydata.csv */; };
+		649E2B6E278416CC0023181D /* Coinbase_susUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF4278416C90023181D /* Coinbase_susUSD_dailydata.csv */; };
+		649E2B6F278416CC0023181D /* Coinbase_aavUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF5278416C90023181D /* Coinbase_aavUSD_dailydata.csv */; };
+		649E2B70278416CC0023181D /* Coinbase_mlnUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF6278416C90023181D /* Coinbase_mlnUSD_dailydata.csv */; };
+		649E2B71278416CC0023181D /* Coinbase_farUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF7278416C90023181D /* Coinbase_farUSD_dailydata.csv */; };
+		649E2B72278416CC0023181D /* Coinbase_godSUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF8278416C90023181D /* Coinbase_godSUSD_dailydata.csv */; };
+		649E2B73278416CC0023181D /* Coinbase_mirUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AF9278416C90023181D /* Coinbase_mirUSD_dailydata.csv */; };
+		649E2B74278416CC0023181D /* Coinbase_looUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AFA278416CA0023181D /* Coinbase_looUSD_dailydata.csv */; };
+		649E2B75278416CC0023181D /* Coinbase_plaUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AFB278416CA0023181D /* Coinbase_plaUSD_dailydata.csv */; };
+		649E2B76278416CC0023181D /* Coinbase_xyoUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AFC278416CA0023181D /* Coinbase_xyoUSD_dailydata.csv */; };
+		649E2B77278416CC0023181D /* Coinbase_filUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AFD278416CA0023181D /* Coinbase_filUSD_dailydata.csv */; };
+		649E2B78278416CC0023181D /* Coinbase_gtcUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AFE278416CA0023181D /* Coinbase_gtcUSD_dailydata.csv */; };
+		649E2B79278416CC0023181D /* Coinbase_usdUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2AFF278416CA0023181D /* Coinbase_usdUSD_dailydata.csv */; };
+		649E2B7A278416CC0023181D /* Coinbase_etcUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B00278416CA0023181D /* Coinbase_etcUSD_dailydata.csv */; };
+		649E2B7B278416CC0023181D /* Coinbase_foxUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B01278416CA0023181D /* Coinbase_foxUSD_dailydata.csv */; };
+		649E2B7C278416CC0023181D /* Coinbase_radUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B02278416CA0023181D /* Coinbase_radUSD_dailydata.csv */; };
+		649E2B7D278416CC0023181D /* Coinbase_chzUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B03278416CA0023181D /* Coinbase_chzUSD_dailydata.csv */; };
+		649E2B7E278416CC0023181D /* Coinbase_ensUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B04278416CA0023181D /* Coinbase_ensUSD_dailydata.csv */; };
+		649E2B7F278416CC0023181D /* Coinbase_quiUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B05278416CA0023181D /* Coinbase_quiUSD_dailydata.csv */; };
+		649E2B80278416CC0023181D /* Coinbase_avaUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B06278416CA0023181D /* Coinbase_avaUSD_dailydata.csv */; };
+		649E2B81278416CC0023181D /* Coinbase_daiUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B07278416CA0023181D /* Coinbase_daiUSD_dailydata.csv */; };
+		649E2B82278416CC0023181D /* Coinbase_btcUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B08278416CA0023181D /* Coinbase_btcUSD_dailydata.csv */; };
+		649E2B83278416CC0023181D /* Coinbase_ideUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B09278416CA0023181D /* Coinbase_ideUSD_dailydata.csv */; };
+		649E2B84278416CC0023181D /* Coinbase_badUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B0A278416CA0023181D /* Coinbase_badUSD_dailydata.csv */; };
+		649E2B85278416CC0023181D /* Coinbase_qntUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B0B278416CA0023181D /* Coinbase_qntUSD_dailydata.csv */; };
+		649E2B86278416CC0023181D /* Coinbase_nmrUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B0C278416CA0023181D /* Coinbase_nmrUSD_dailydata.csv */; };
+		649E2B87278416CC0023181D /* Coinbase_shiUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B0D278416CA0023181D /* Coinbase_shiUSD_dailydata.csv */; };
+		649E2B88278416CC0023181D /* Coinbase_xtzUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B0E278416CA0023181D /* Coinbase_xtzUSD_dailydata.csv */; };
+		649E2B89278416CC0023181D /* Coinbase_adaUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B0F278416CA0023181D /* Coinbase_adaUSD_dailydata.csv */; };
+		649E2B8A278416CC0023181D /* Coinbase_keeUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B10278416CA0023181D /* Coinbase_keeUSD_dailydata.csv */; };
+		649E2B8B278416CC0023181D /* Coinbase_cotUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B11278416CA0023181D /* Coinbase_cotUSD_dailydata.csv */; };
+		649E2B8C278416CC0023181D /* Coinbase_ampUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B12278416CB0023181D /* Coinbase_ampUSD_dailydata.csv */; };
+		649E2B8D278416CC0023181D /* Coinbase_musUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B13278416CB0023181D /* Coinbase_musUSD_dailydata.csv */; };
+		649E2B8E278416CC0023181D /* Coinbase_galUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B14278416CB0023181D /* Coinbase_galUSD_dailydata.csv */; };
+		649E2B8F278416CC0023181D /* Coinbase_mkrUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B15278416CB0023181D /* Coinbase_mkrUSD_dailydata.csv */; };
+		649E2B90278416CC0023181D /* Coinbase_linUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B16278416CB0023181D /* Coinbase_linUSD_dailydata.csv */; };
+		649E2B91278416CC0023181D /* Coinbase_batUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B17278416CB0023181D /* Coinbase_batUSD_dailydata.csv */; };
+		649E2B92278416CC0023181D /* Coinbase_dogUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B18278416CB0023181D /* Coinbase_dogUSD_dailydata.csv */; };
+		649E2B93278416CC0023181D /* Coinbase_sukUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B19278416CB0023181D /* Coinbase_sukUSD_dailydata.csv */; };
+		649E2B94278416CC0023181D /* Coinbase_ognUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B1A278416CB0023181D /* Coinbase_ognUSD_dailydata.csv */; };
+		649E2B95278416CC0023181D /* Coinbase_fetUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B1B278416CB0023181D /* Coinbase_fetUSD_dailydata.csv */; };
+		649E2B96278416CC0023181D /* Coinbase_atoUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B1C278416CB0023181D /* Coinbase_atoUSD_dailydata.csv */; };
+		649E2B97278416CC0023181D /* Coinbase_nknUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B1D278416CB0023181D /* Coinbase_nknUSD_dailydata.csv */; };
+		649E2B98278416CC0023181D /* Coinbase_lptUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B1E278416CB0023181D /* Coinbase_lptUSD_dailydata.csv */; };
+		649E2B99278416CC0023181D /* Coinbase_achUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B1F278416CB0023181D /* Coinbase_achUSD_dailydata.csv */; };
+		649E2B9A278416CC0023181D /* Coinbase_reqUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B20278416CB0023181D /* Coinbase_reqUSD_dailydata.csv */; };
+		649E2B9B278416CC0023181D /* Coinbase_raiUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B21278416CB0023181D /* Coinbase_raiUSD_dailydata.csv */; };
+		649E2B9C278416CC0023181D /* Coinbase_eosUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B22278416CB0023181D /* Coinbase_eosUSD_dailydata.csv */; };
+		649E2B9D278416CC0023181D /* Coinbase_stoUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B23278416CB0023181D /* Coinbase_stoUSD_dailydata.csv */; };
+		649E2B9E278416CC0023181D /* Coinbase_imxUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B24278416CB0023181D /* Coinbase_imxUSD_dailydata.csv */; };
+		649E2B9F278416CC0023181D /* Coinbase_solUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B25278416CB0023181D /* Coinbase_solUSD_dailydata.csv */; };
+		649E2BA0278416CC0023181D /* Coinbase_ornUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B26278416CB0023181D /* Coinbase_ornUSD_dailydata.csv */; };
+		649E2BA1278416CC0023181D /* Coinbase_krlUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B27278416CB0023181D /* Coinbase_krlUSD_dailydata.csv */; };
+		649E2BA2278416CC0023181D /* Coinbase_ltcUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B28278416CC0023181D /* Coinbase_ltcUSD_dailydata.csv */; };
+		649E2BA3278416CC0023181D /* Coinbase_arpUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B29278416CC0023181D /* Coinbase_arpUSD_dailydata.csv */; };
+		649E2BA4278416CC0023181D /* Coinbase_desUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B2A278416CC0023181D /* Coinbase_desUSD_dailydata.csv */; };
+		649E2BA5278416CC0023181D /* Coinbase_jasUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B2B278416CC0023181D /* Coinbase_jasUSD_dailydata.csv */; };
+		649E2BA6278416CC0023181D /* Coinbase_matUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B2C278416CC0023181D /* Coinbase_matUSD_dailydata.csv */; };
+		649E2BA7278416CC0023181D /* Coinbase_powUSD_dailydata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 649E2B2D278416CC0023181D /* Coinbase_powUSD_dailydata.csv */; };
+		64A64D092773F9E60076ADD6 /* CryptoAnalysisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A64D082773F9E60076ADD6 /* CryptoAnalysisApp.swift */; };
+		64A64D0B2773F9E60076ADD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A64D0A2773F9E60076ADD6 /* ContentView.swift */; };
+		64A64D0D2773F9E90076ADD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A64D0C2773F9E90076ADD6 /* Assets.xcassets */; };
+		64A64D102773F9E90076ADD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A64D0F2773F9E90076ADD6 /* Preview Assets.xcassets */; };
+		64A64D1A2773F9E90076ADD6 /* CryptoAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A64D192773F9E90076ADD6 /* CryptoAnalysisTests.swift */; };
+		64A64D242773F9E90076ADD6 /* CryptoAnalysisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A64D232773F9E90076ADD6 /* CryptoAnalysisUITests.swift */; };
+		64A64D262773F9E90076ADD6 /* CryptoAnalysisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A64D252773F9E90076ADD6 /* CryptoAnalysisUITestsLaunchTests.swift */; };
+		64A64D33277416160076ADD6 /* priceRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A64D32277416150076ADD6 /* priceRetriever.swift */; };
+		64A64D3B2774A0200076ADD6 /* StockCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 64A64D3A2774A0200076ADD6 /* StockCharts */; };
+		64A64D3D2776C85B0076ADD6 /* addScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A64D3C2776C85B0076ADD6 /* addScreen.swift */; };
+		64F3A2C2277AB2E70084E4DE /* PredictionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3A2C1277AB2E70084E4DE /* PredictionBuilder.swift */; };
+		6A98A9F8579F910849F2F331 /* Pods_CryptoAnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F76C50B993ED5D80576334 /* Pods_CryptoAnalysisTests.framework */; };
+		CCD3C645A4760D63CEF76C1F /* Pods_CryptoAnalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401F087A956454B2F50D66E3 /* Pods_CryptoAnalysis.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64A64D162773F9E90076ADD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64A64CFD2773F9E60076ADD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64A64D042773F9E60076ADD6;
+			remoteInfo = CryptoAnalysis;
+		};
+		64A64D202773F9E90076ADD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64A64CFD2773F9E60076ADD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64A64D042773F9E60076ADD6;
+			remoteInfo = CryptoAnalysis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2096F3376615D0A4332EC24E /* Pods-CryptoAnalysis-CryptoAnalysisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoAnalysis-CryptoAnalysisUITests.release.xcconfig"; path = "Target Support Files/Pods-CryptoAnalysis-CryptoAnalysisUITests/Pods-CryptoAnalysis-CryptoAnalysisUITests.release.xcconfig"; sourceTree = "<group>"; };
+		21C30947D4A38EDF0B50B20D /* Pods-CryptoAnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoAnalysisTests.release.xcconfig"; path = "Target Support Files/Pods-CryptoAnalysisTests/Pods-CryptoAnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
+		401F087A956454B2F50D66E3 /* Pods_CryptoAnalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoAnalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC7EEA51011B8AA64298098 /* Pods-CryptoAnalysisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoAnalysisTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoAnalysisTests/Pods-CryptoAnalysisTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51FC2EBAEB3605F44B2B11F4 /* Pods-CryptoAnalysis-CryptoAnalysisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoAnalysis-CryptoAnalysisUITests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoAnalysis-CryptoAnalysisUITests/Pods-CryptoAnalysis-CryptoAnalysisUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		60E5559D7478AB6ECE0CC7A3 /* Pods-CryptoAnalysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoAnalysis.release.xcconfig"; path = "Target Support Files/Pods-CryptoAnalysis/Pods-CryptoAnalysis.release.xcconfig"; sourceTree = "<group>"; };
+		649E29A4277B1B650023181D /* polynomialRegression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = polynomialRegression.swift; sourceTree = "<group>"; };
+		649E29A6277B1B910023181D /* PRMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRMatrix.swift; sourceTree = "<group>"; };
+		649E29A8277C19B20023181D /* quantityAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quantityAdd.swift; sourceTree = "<group>"; };
+		649E29AC277C9CF40023181D /* addQuantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addQuantity.swift; sourceTree = "<group>"; };
+		649E29AE277F83B10023181D /* calculationDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculationDisplay.swift; sourceTree = "<group>"; };
+		649E2AB4278416C60023181D /* Coinbase_manUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_manUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AB5278416C60023181D /* Coinbase_bntUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_bntUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AB6278416C70023181D /* Coinbase_bchUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_bchUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AB7278416C70023181D /* Coinbase_zrxUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_zrxUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AB8278416C70023181D /* Coinbase_forUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_forUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AB9278416C70023181D /* Coinbase_icpUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_icpUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ABA278416C70023181D /* Coinbase_wbtUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_wbtUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ABB278416C70023181D /* Coinbase_uniUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_uniUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ABC278416C70023181D /* Coinbase_oxtUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_oxtUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ABD278416C70023181D /* Coinbase_zecUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_zecUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ABE278416C70023181D /* Coinbase_axsUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_axsUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ABF278416C70023181D /* Coinbase_ustUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_ustUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC0278416C70023181D /* Coinbase_1inUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_1inUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC1278416C70023181D /* Coinbase_alcUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_alcUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC2278416C70023181D /* Coinbase_algUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_algUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC3278416C70023181D /* Coinbase_bonUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_bonUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC4278416C70023181D /* Coinbase_umaUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_umaUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC5278416C70023181D /* Coinbase_asmUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_asmUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC6278416C70023181D /* Coinbase_truUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_truUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC7278416C70023181D /* Coinbase_yfiUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_yfiUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC8278416C70023181D /* Coinbase_vgxUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_vgxUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AC9278416C70023181D /* Coinbase_lrcUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_lrcUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ACA278416C70023181D /* Coinbase_sklUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_sklUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ACB278416C70023181D /* Coinbase_rlcUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_rlcUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ACC278416C70023181D /* Coinbase_supUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_supUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ACD278416C70023181D /* Coinbase_speUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_speUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ACE278416C80023181D /* Coinbase_trbUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_trbUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ACF278416C80023181D /* Coinbase_grtUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_grtUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD0278416C80023181D /* Coinbase_rarUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_rarUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD1278416C80023181D /* Coinbase_zenUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_zenUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD2278416C80023181D /* Coinbase_triUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_triUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD3278416C80023181D /* Coinbase_croUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_croUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD4278416C80023181D /* Coinbase_btrUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_btrUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD5278416C80023181D /* Coinbase_aglUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_aglUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD6278416C80023181D /* Coinbase_traUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_traUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD7278416C80023181D /* Coinbase_dotUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_dotUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD8278416C80023181D /* Coinbase_enjUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_enjUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AD9278416C80023181D /* Coinbase_rlyUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_rlyUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ADA278416C80023181D /* Coinbase_snxUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_snxUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ADB278416C80023181D /* Coinbase_repUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_repUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ADC278416C80023181D /* Coinbase_cvcUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_cvcUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ADD278416C80023181D /* Coinbase_ddxUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_ddxUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ADE278416C80023181D /* Coinbase_polUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_polUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2ADF278416C80023181D /* Coinbase_kncUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_kncUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE0278416C80023181D /* Coinbase_balUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_balUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE1278416C80023181D /* Coinbase_rbnUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_rbnUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE2278416C80023181D /* Coinbase_dntUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_dntUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE3278416C80023181D /* Coinbase_covUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_covUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE4278416C90023181D /* Coinbase_xlmUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_xlmUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE5278416C90023181D /* Coinbase_mdtUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_mdtUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE6278416C90023181D /* Coinbase_rgtUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_rgtUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE7278416C90023181D /* Coinbase_gyeUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_gyeUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE8278416C90023181D /* Coinbase_comUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_comUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AE9278416C90023181D /* Coinbase_banUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_banUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AEA278416C90023181D /* Coinbase_ankUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_ankUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AEB278416C90023181D /* Coinbase_omgUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_omgUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AEC278416C90023181D /* Coinbase_renUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_renUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AED278416C90023181D /* Coinbase_perUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_perUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AEE278416C90023181D /* Coinbase_blzUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_blzUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AEF278416C90023181D /* Coinbase_dasUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_dasUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF0278416C90023181D /* Coinbase_clvUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_clvUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF1278416C90023181D /* Coinbase_crvUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_crvUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF2278416C90023181D /* Coinbase_lcxUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_lcxUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF3278416C90023181D /* Coinbase_iotUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_iotUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF4278416C90023181D /* Coinbase_susUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_susUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF5278416C90023181D /* Coinbase_aavUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_aavUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF6278416C90023181D /* Coinbase_mlnUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_mlnUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF7278416C90023181D /* Coinbase_farUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_farUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF8278416C90023181D /* Coinbase_godSUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_godSUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AF9278416C90023181D /* Coinbase_mirUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_mirUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AFA278416CA0023181D /* Coinbase_looUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_looUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AFB278416CA0023181D /* Coinbase_plaUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_plaUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AFC278416CA0023181D /* Coinbase_xyoUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_xyoUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AFD278416CA0023181D /* Coinbase_filUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_filUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AFE278416CA0023181D /* Coinbase_gtcUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_gtcUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2AFF278416CA0023181D /* Coinbase_usdUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_usdUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B00278416CA0023181D /* Coinbase_etcUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_etcUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B01278416CA0023181D /* Coinbase_foxUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_foxUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B02278416CA0023181D /* Coinbase_radUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_radUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B03278416CA0023181D /* Coinbase_chzUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_chzUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B04278416CA0023181D /* Coinbase_ensUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_ensUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B05278416CA0023181D /* Coinbase_quiUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_quiUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B06278416CA0023181D /* Coinbase_avaUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_avaUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B07278416CA0023181D /* Coinbase_daiUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_daiUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B08278416CA0023181D /* Coinbase_btcUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_btcUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B09278416CA0023181D /* Coinbase_ideUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_ideUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B0A278416CA0023181D /* Coinbase_badUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_badUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B0B278416CA0023181D /* Coinbase_qntUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_qntUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B0C278416CA0023181D /* Coinbase_nmrUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_nmrUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B0D278416CA0023181D /* Coinbase_shiUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_shiUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B0E278416CA0023181D /* Coinbase_xtzUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_xtzUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B0F278416CA0023181D /* Coinbase_adaUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_adaUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B10278416CA0023181D /* Coinbase_keeUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_keeUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B11278416CA0023181D /* Coinbase_cotUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_cotUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B12278416CB0023181D /* Coinbase_ampUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_ampUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B13278416CB0023181D /* Coinbase_musUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_musUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B14278416CB0023181D /* Coinbase_galUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_galUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B15278416CB0023181D /* Coinbase_mkrUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_mkrUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B16278416CB0023181D /* Coinbase_linUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_linUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B17278416CB0023181D /* Coinbase_batUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_batUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B18278416CB0023181D /* Coinbase_dogUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_dogUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B19278416CB0023181D /* Coinbase_sukUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_sukUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B1A278416CB0023181D /* Coinbase_ognUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_ognUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B1B278416CB0023181D /* Coinbase_fetUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_fetUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B1C278416CB0023181D /* Coinbase_atoUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_atoUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B1D278416CB0023181D /* Coinbase_nknUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_nknUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B1E278416CB0023181D /* Coinbase_lptUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_lptUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B1F278416CB0023181D /* Coinbase_achUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_achUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B20278416CB0023181D /* Coinbase_reqUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_reqUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B21278416CB0023181D /* Coinbase_raiUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_raiUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B22278416CB0023181D /* Coinbase_eosUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_eosUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B23278416CB0023181D /* Coinbase_stoUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_stoUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B24278416CB0023181D /* Coinbase_imxUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_imxUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B25278416CB0023181D /* Coinbase_solUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_solUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B26278416CB0023181D /* Coinbase_ornUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_ornUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B27278416CB0023181D /* Coinbase_krlUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_krlUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B28278416CC0023181D /* Coinbase_ltcUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_ltcUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B29278416CC0023181D /* Coinbase_arpUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_arpUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B2A278416CC0023181D /* Coinbase_desUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_desUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B2B278416CC0023181D /* Coinbase_jasUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_jasUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B2C278416CC0023181D /* Coinbase_matUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_matUSD_dailydata.csv; sourceTree = "<group>"; };
+		649E2B2D278416CC0023181D /* Coinbase_powUSD_dailydata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coinbase_powUSD_dailydata.csv; sourceTree = "<group>"; };
+		64A64D052773F9E60076ADD6 /* CryptoAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A64D082773F9E60076ADD6 /* CryptoAnalysisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAnalysisApp.swift; sourceTree = "<group>"; };
+		64A64D0A2773F9E60076ADD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64A64D0C2773F9E90076ADD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64A64D0F2773F9E90076ADD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64A64D152773F9E90076ADD6 /* CryptoAnalysisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAnalysisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A64D192773F9E90076ADD6 /* CryptoAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAnalysisTests.swift; sourceTree = "<group>"; };
+		64A64D1F2773F9E90076ADD6 /* CryptoAnalysisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAnalysisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A64D232773F9E90076ADD6 /* CryptoAnalysisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAnalysisUITests.swift; sourceTree = "<group>"; };
+		64A64D252773F9E90076ADD6 /* CryptoAnalysisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAnalysisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64A64D32277416150076ADD6 /* priceRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = priceRetriever.swift; sourceTree = "<group>"; };
+		64A64D3C2776C85B0076ADD6 /* addScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addScreen.swift; sourceTree = "<group>"; };
+		64F3A2C1277AB2E70084E4DE /* PredictionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionBuilder.swift; sourceTree = "<group>"; };
+		A41A400905780033A7A09306 /* Pods_CryptoAnalysis_CryptoAnalysisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoAnalysis_CryptoAnalysisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F76C50B993ED5D80576334 /* Pods_CryptoAnalysisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoAnalysisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7553ADDBE210C15243BA17 /* Pods-CryptoAnalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoAnalysis.debug.xcconfig"; path = "Target Support Files/Pods-CryptoAnalysis/Pods-CryptoAnalysis.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64A64D022773F9E60076ADD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649E299F277AC1D40023181D /* CSV in Frameworks */,
+				64A64D3B2774A0200076ADD6 /* StockCharts in Frameworks */,
+				CCD3C645A4760D63CEF76C1F /* Pods_CryptoAnalysis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A64D122773F9E90076ADD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A98A9F8579F910849F2F331 /* Pods_CryptoAnalysisTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A64D1C2773F9E90076ADD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346F99391961F1912756A7F8 /* Pods_CryptoAnalysis_CryptoAnalysisUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0306495C8D7B8F622852B7E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				401F087A956454B2F50D66E3 /* Pods_CryptoAnalysis.framework */,
+				A41A400905780033A7A09306 /* Pods_CryptoAnalysis_CryptoAnalysisUITests.framework */,
+				A8F76C50B993ED5D80576334 /* Pods_CryptoAnalysisTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		649E29B0278409A80023181D /* CryptoPrices */ = {
+			isa = PBXGroup;
+			children = (
+				649E2AC0278416C70023181D /* Coinbase_1inUSD_dailydata.csv */,
+				649E2AF5278416C90023181D /* Coinbase_aavUSD_dailydata.csv */,
+				649E2B1F278416CB0023181D /* Coinbase_achUSD_dailydata.csv */,
+				649E2B0F278416CA0023181D /* Coinbase_adaUSD_dailydata.csv */,
+				649E2AD5278416C80023181D /* Coinbase_aglUSD_dailydata.csv */,
+				649E2AC1278416C70023181D /* Coinbase_alcUSD_dailydata.csv */,
+				649E2AC2278416C70023181D /* Coinbase_algUSD_dailydata.csv */,
+				649E2B12278416CB0023181D /* Coinbase_ampUSD_dailydata.csv */,
+				649E2AEA278416C90023181D /* Coinbase_ankUSD_dailydata.csv */,
+				649E2B29278416CC0023181D /* Coinbase_arpUSD_dailydata.csv */,
+				649E2AC5278416C70023181D /* Coinbase_asmUSD_dailydata.csv */,
+				649E2B1C278416CB0023181D /* Coinbase_atoUSD_dailydata.csv */,
+				649E2B06278416CA0023181D /* Coinbase_avaUSD_dailydata.csv */,
+				649E2ABE278416C70023181D /* Coinbase_axsUSD_dailydata.csv */,
+				649E2B0A278416CA0023181D /* Coinbase_badUSD_dailydata.csv */,
+				649E2AE0278416C80023181D /* Coinbase_balUSD_dailydata.csv */,
+				649E2AE9278416C90023181D /* Coinbase_banUSD_dailydata.csv */,
+				649E2B17278416CB0023181D /* Coinbase_batUSD_dailydata.csv */,
+				649E2AB6278416C70023181D /* Coinbase_bchUSD_dailydata.csv */,
+				649E2AEE278416C90023181D /* Coinbase_blzUSD_dailydata.csv */,
+				649E2AB5278416C60023181D /* Coinbase_bntUSD_dailydata.csv */,
+				649E2AC3278416C70023181D /* Coinbase_bonUSD_dailydata.csv */,
+				649E2B08278416CA0023181D /* Coinbase_btcUSD_dailydata.csv */,
+				649E2AD4278416C80023181D /* Coinbase_btrUSD_dailydata.csv */,
+				649E2B03278416CA0023181D /* Coinbase_chzUSD_dailydata.csv */,
+				649E2AF0278416C90023181D /* Coinbase_clvUSD_dailydata.csv */,
+				649E2AE8278416C90023181D /* Coinbase_comUSD_dailydata.csv */,
+				649E2B11278416CA0023181D /* Coinbase_cotUSD_dailydata.csv */,
+				649E2AE3278416C80023181D /* Coinbase_covUSD_dailydata.csv */,
+				649E2AD3278416C80023181D /* Coinbase_croUSD_dailydata.csv */,
+				649E2AF1278416C90023181D /* Coinbase_crvUSD_dailydata.csv */,
+				649E2ADC278416C80023181D /* Coinbase_cvcUSD_dailydata.csv */,
+				649E2B07278416CA0023181D /* Coinbase_daiUSD_dailydata.csv */,
+				649E2AEF278416C90023181D /* Coinbase_dasUSD_dailydata.csv */,
+				649E2ADD278416C80023181D /* Coinbase_ddxUSD_dailydata.csv */,
+				649E2B2A278416CC0023181D /* Coinbase_desUSD_dailydata.csv */,
+				649E2AE2278416C80023181D /* Coinbase_dntUSD_dailydata.csv */,
+				649E2B18278416CB0023181D /* Coinbase_dogUSD_dailydata.csv */,
+				649E2AD7278416C80023181D /* Coinbase_dotUSD_dailydata.csv */,
+				649E2AD8278416C80023181D /* Coinbase_enjUSD_dailydata.csv */,
+				649E2B04278416CA0023181D /* Coinbase_ensUSD_dailydata.csv */,
+				649E2B22278416CB0023181D /* Coinbase_eosUSD_dailydata.csv */,
+				649E2B00278416CA0023181D /* Coinbase_etcUSD_dailydata.csv */,
+				649E2AF7278416C90023181D /* Coinbase_farUSD_dailydata.csv */,
+				649E2B1B278416CB0023181D /* Coinbase_fetUSD_dailydata.csv */,
+				649E2AFD278416CA0023181D /* Coinbase_filUSD_dailydata.csv */,
+				649E2AB8278416C70023181D /* Coinbase_forUSD_dailydata.csv */,
+				649E2B01278416CA0023181D /* Coinbase_foxUSD_dailydata.csv */,
+				649E2B14278416CB0023181D /* Coinbase_galUSD_dailydata.csv */,
+				649E2AF8278416C90023181D /* Coinbase_godSUSD_dailydata.csv */,
+				649E2ACF278416C80023181D /* Coinbase_grtUSD_dailydata.csv */,
+				649E2AFE278416CA0023181D /* Coinbase_gtcUSD_dailydata.csv */,
+				649E2AE7278416C90023181D /* Coinbase_gyeUSD_dailydata.csv */,
+				649E2AB9278416C70023181D /* Coinbase_icpUSD_dailydata.csv */,
+				649E2B09278416CA0023181D /* Coinbase_ideUSD_dailydata.csv */,
+				649E2B24278416CB0023181D /* Coinbase_imxUSD_dailydata.csv */,
+				649E2AF3278416C90023181D /* Coinbase_iotUSD_dailydata.csv */,
+				649E2B2B278416CC0023181D /* Coinbase_jasUSD_dailydata.csv */,
+				649E2B10278416CA0023181D /* Coinbase_keeUSD_dailydata.csv */,
+				649E2ADF278416C80023181D /* Coinbase_kncUSD_dailydata.csv */,
+				649E2B27278416CB0023181D /* Coinbase_krlUSD_dailydata.csv */,
+				649E2AF2278416C90023181D /* Coinbase_lcxUSD_dailydata.csv */,
+				649E2B16278416CB0023181D /* Coinbase_linUSD_dailydata.csv */,
+				649E2AFA278416CA0023181D /* Coinbase_looUSD_dailydata.csv */,
+				649E2B1E278416CB0023181D /* Coinbase_lptUSD_dailydata.csv */,
+				649E2AC9278416C70023181D /* Coinbase_lrcUSD_dailydata.csv */,
+				649E2B28278416CC0023181D /* Coinbase_ltcUSD_dailydata.csv */,
+				649E2AB4278416C60023181D /* Coinbase_manUSD_dailydata.csv */,
+				649E2B2C278416CC0023181D /* Coinbase_matUSD_dailydata.csv */,
+				649E2AE5278416C90023181D /* Coinbase_mdtUSD_dailydata.csv */,
+				649E2AF9278416C90023181D /* Coinbase_mirUSD_dailydata.csv */,
+				649E2B15278416CB0023181D /* Coinbase_mkrUSD_dailydata.csv */,
+				649E2AF6278416C90023181D /* Coinbase_mlnUSD_dailydata.csv */,
+				649E2B13278416CB0023181D /* Coinbase_musUSD_dailydata.csv */,
+				649E2B1D278416CB0023181D /* Coinbase_nknUSD_dailydata.csv */,
+				649E2B0C278416CA0023181D /* Coinbase_nmrUSD_dailydata.csv */,
+				649E2B1A278416CB0023181D /* Coinbase_ognUSD_dailydata.csv */,
+				649E2AEB278416C90023181D /* Coinbase_omgUSD_dailydata.csv */,
+				649E2B26278416CB0023181D /* Coinbase_ornUSD_dailydata.csv */,
+				649E2ABC278416C70023181D /* Coinbase_oxtUSD_dailydata.csv */,
+				649E2AED278416C90023181D /* Coinbase_perUSD_dailydata.csv */,
+				649E2AFB278416CA0023181D /* Coinbase_plaUSD_dailydata.csv */,
+				649E2ADE278416C80023181D /* Coinbase_polUSD_dailydata.csv */,
+				649E2B2D278416CC0023181D /* Coinbase_powUSD_dailydata.csv */,
+				649E2B0B278416CA0023181D /* Coinbase_qntUSD_dailydata.csv */,
+				649E2B05278416CA0023181D /* Coinbase_quiUSD_dailydata.csv */,
+				649E2B02278416CA0023181D /* Coinbase_radUSD_dailydata.csv */,
+				649E2B21278416CB0023181D /* Coinbase_raiUSD_dailydata.csv */,
+				649E2AD0278416C80023181D /* Coinbase_rarUSD_dailydata.csv */,
+				649E2AE1278416C80023181D /* Coinbase_rbnUSD_dailydata.csv */,
+				649E2AEC278416C90023181D /* Coinbase_renUSD_dailydata.csv */,
+				649E2ADB278416C80023181D /* Coinbase_repUSD_dailydata.csv */,
+				649E2B20278416CB0023181D /* Coinbase_reqUSD_dailydata.csv */,
+				649E2AE6278416C90023181D /* Coinbase_rgtUSD_dailydata.csv */,
+				649E2ACB278416C70023181D /* Coinbase_rlcUSD_dailydata.csv */,
+				649E2AD9278416C80023181D /* Coinbase_rlyUSD_dailydata.csv */,
+				649E2B0D278416CA0023181D /* Coinbase_shiUSD_dailydata.csv */,
+				649E2ACA278416C70023181D /* Coinbase_sklUSD_dailydata.csv */,
+				649E2ADA278416C80023181D /* Coinbase_snxUSD_dailydata.csv */,
+				649E2B25278416CB0023181D /* Coinbase_solUSD_dailydata.csv */,
+				649E2ACD278416C70023181D /* Coinbase_speUSD_dailydata.csv */,
+				649E2B23278416CB0023181D /* Coinbase_stoUSD_dailydata.csv */,
+				649E2B19278416CB0023181D /* Coinbase_sukUSD_dailydata.csv */,
+				649E2ACC278416C70023181D /* Coinbase_supUSD_dailydata.csv */,
+				649E2AF4278416C90023181D /* Coinbase_susUSD_dailydata.csv */,
+				649E2AD6278416C80023181D /* Coinbase_traUSD_dailydata.csv */,
+				649E2ACE278416C80023181D /* Coinbase_trbUSD_dailydata.csv */,
+				649E2AD2278416C80023181D /* Coinbase_triUSD_dailydata.csv */,
+				649E2AC6278416C70023181D /* Coinbase_truUSD_dailydata.csv */,
+				649E2AC4278416C70023181D /* Coinbase_umaUSD_dailydata.csv */,
+				649E2ABB278416C70023181D /* Coinbase_uniUSD_dailydata.csv */,
+				649E2AFF278416CA0023181D /* Coinbase_usdUSD_dailydata.csv */,
+				649E2ABF278416C70023181D /* Coinbase_ustUSD_dailydata.csv */,
+				649E2AC8278416C70023181D /* Coinbase_vgxUSD_dailydata.csv */,
+				649E2ABA278416C70023181D /* Coinbase_wbtUSD_dailydata.csv */,
+				649E2AE4278416C90023181D /* Coinbase_xlmUSD_dailydata.csv */,
+				649E2B0E278416CA0023181D /* Coinbase_xtzUSD_dailydata.csv */,
+				649E2AFC278416CA0023181D /* Coinbase_xyoUSD_dailydata.csv */,
+				649E2AC7278416C70023181D /* Coinbase_yfiUSD_dailydata.csv */,
+				649E2ABD278416C70023181D /* Coinbase_zecUSD_dailydata.csv */,
+				649E2AD1278416C80023181D /* Coinbase_zenUSD_dailydata.csv */,
+				649E2AB7278416C70023181D /* Coinbase_zrxUSD_dailydata.csv */,
+			);
+			path = CryptoPrices;
+			sourceTree = "<group>";
+		};
+		64A64CFC2773F9E60076ADD6 = {
+			isa = PBXGroup;
+			children = (
+				64A64D072773F9E60076ADD6 /* CryptoAnalysis */,
+				64A64D182773F9E90076ADD6 /* CryptoAnalysisTests */,
+				64A64D222773F9E90076ADD6 /* CryptoAnalysisUITests */,
+				64A64D062773F9E60076ADD6 /* Products */,
+				7D1AF314DC5755F29CBB9F84 /* Pods */,
+				0306495C8D7B8F622852B7E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64A64D062773F9E60076ADD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64A64D052773F9E60076ADD6 /* CryptoAnalysis.app */,
+				64A64D152773F9E90076ADD6 /* CryptoAnalysisTests.xctest */,
+				64A64D1F2773F9E90076ADD6 /* CryptoAnalysisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64A64D072773F9E60076ADD6 /* CryptoAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				649E29B0278409A80023181D /* CryptoPrices */,
+				64A64D082773F9E60076ADD6 /* CryptoAnalysisApp.swift */,
+				64A64D0A2773F9E60076ADD6 /* ContentView.swift */,
+				64A64D3C2776C85B0076ADD6 /* addScreen.swift */,
+				64A64D32277416150076ADD6 /* priceRetriever.swift */,
+				64F3A2C1277AB2E70084E4DE /* PredictionBuilder.swift */,
+				649E29A4277B1B650023181D /* polynomialRegression.swift */,
+				649E29AC277C9CF40023181D /* addQuantity.swift */,
+				649E29AE277F83B10023181D /* calculationDisplay.swift */,
+				649E29A8277C19B20023181D /* quantityAdd.swift */,
+				649E29A6277B1B910023181D /* PRMatrix.swift */,
+				64A64D0C2773F9E90076ADD6 /* Assets.xcassets */,
+				64A64D0E2773F9E90076ADD6 /* Preview Content */,
+			);
+			path = CryptoAnalysis;
+			sourceTree = "<group>";
+		};
+		64A64D0E2773F9E90076ADD6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				64A64D0F2773F9E90076ADD6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64A64D182773F9E90076ADD6 /* CryptoAnalysisTests */ = {
+			isa = PBXGroup;
+			children = (
+				64A64D192773F9E90076ADD6 /* CryptoAnalysisTests.swift */,
+			);
+			path = CryptoAnalysisTests;
+			sourceTree = "<group>";
+		};
+		64A64D222773F9E90076ADD6 /* CryptoAnalysisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64A64D232773F9E90076ADD6 /* CryptoAnalysisUITests.swift */,
+				64A64D252773F9E90076ADD6 /* CryptoAnalysisUITestsLaunchTests.swift */,
+			);
+			path = CryptoAnalysisUITests;
+			sourceTree = "<group>";
+		};
+		7D1AF314DC5755F29CBB9F84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB7553ADDBE210C15243BA17 /* Pods-CryptoAnalysis.debug.xcconfig */,
+				60E5559D7478AB6ECE0CC7A3 /* Pods-CryptoAnalysis.release.xcconfig */,
+				51FC2EBAEB3605F44B2B11F4 /* Pods-CryptoAnalysis-CryptoAnalysisUITests.debug.xcconfig */,
+				2096F3376615D0A4332EC24E /* Pods-CryptoAnalysis-CryptoAnalysisUITests.release.xcconfig */,
+				4BC7EEA51011B8AA64298098 /* Pods-CryptoAnalysisTests.debug.xcconfig */,
+				21C30947D4A38EDF0B50B20D /* Pods-CryptoAnalysisTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64A64D042773F9E60076ADD6 /* CryptoAnalysis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A64D292773F9E90076ADD6 /* Build configuration list for PBXNativeTarget "CryptoAnalysis" */;
+			buildPhases = (
+				121FA8CD994FD51D1B403F59 /* [CP] Check Pods Manifest.lock */,
+				64A64D012773F9E60076ADD6 /* Sources */,
+				64A64D022773F9E60076ADD6 /* Frameworks */,
+				64A64D032773F9E60076ADD6 /* Resources */,
+				4224D6C5D6276A3596FB6904 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoAnalysis;
+			packageProductDependencies = (
+				64A64D3A2774A0200076ADD6 /* StockCharts */,
+				649E299E277AC1D40023181D /* CSV */,
+			);
+			productName = CryptoAnalysis;
+			productReference = 64A64D052773F9E60076ADD6 /* CryptoAnalysis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64A64D142773F9E90076ADD6 /* CryptoAnalysisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A64D2C2773F9E90076ADD6 /* Build configuration list for PBXNativeTarget "CryptoAnalysisTests" */;
+			buildPhases = (
+				CB8A8A8563370F26F69D6AF3 /* [CP] Check Pods Manifest.lock */,
+				64A64D112773F9E90076ADD6 /* Sources */,
+				64A64D122773F9E90076ADD6 /* Frameworks */,
+				64A64D132773F9E90076ADD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64A64D172773F9E90076ADD6 /* PBXTargetDependency */,
+			);
+			name = CryptoAnalysisTests;
+			productName = CryptoAnalysisTests;
+			productReference = 64A64D152773F9E90076ADD6 /* CryptoAnalysisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64A64D1E2773F9E90076ADD6 /* CryptoAnalysisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A64D2F2773F9E90076ADD6 /* Build configuration list for PBXNativeTarget "CryptoAnalysisUITests" */;
+			buildPhases = (
+				40931B18661162A683C00AC8 /* [CP] Check Pods Manifest.lock */,
+				64A64D1B2773F9E90076ADD6 /* Sources */,
+				64A64D1C2773F9E90076ADD6 /* Frameworks */,
+				64A64D1D2773F9E90076ADD6 /* Resources */,
+				9CD1C01E0C4F40BE801CBBC0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64A64D212773F9E90076ADD6 /* PBXTargetDependency */,
+			);
+			name = CryptoAnalysisUITests;
+			productName = CryptoAnalysisUITests;
+			productReference = 64A64D1F2773F9E90076ADD6 /* CryptoAnalysisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64A64CFD2773F9E60076ADD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					64A64D042773F9E60076ADD6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					64A64D142773F9E90076ADD6 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 64A64D042773F9E60076ADD6;
+					};
+					64A64D1E2773F9E90076ADD6 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 64A64D042773F9E60076ADD6;
+					};
+				};
+			};
+			buildConfigurationList = 64A64D002773F9E60076ADD6 /* Build configuration list for PBXProject "CryptoAnalysis" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64A64CFC2773F9E60076ADD6;
+			packageReferences = (
+				64A64D392774A0200076ADD6 /* XCRemoteSwiftPackageReference "stock-charts" */,
+				649E299D277AC1D40023181D /* XCRemoteSwiftPackageReference "CSV.swift" */,
+			);
+			productRefGroup = 64A64D062773F9E60076ADD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64A64D042773F9E60076ADD6 /* CryptoAnalysis */,
+				64A64D142773F9E90076ADD6 /* CryptoAnalysisTests */,
+				64A64D1E2773F9E90076ADD6 /* CryptoAnalysisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64A64D032773F9E60076ADD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649E2B46278416CC0023181D /* Coinbase_supUSD_dailydata.csv in Resources */,
+				649E2B9E278416CC0023181D /* Coinbase_imxUSD_dailydata.csv in Resources */,
+				649E2B35278416CC0023181D /* Coinbase_uniUSD_dailydata.csv in Resources */,
+				649E2B73278416CC0023181D /* Coinbase_mirUSD_dailydata.csv in Resources */,
+				649E2B74278416CC0023181D /* Coinbase_looUSD_dailydata.csv in Resources */,
+				649E2B8E278416CC0023181D /* Coinbase_galUSD_dailydata.csv in Resources */,
+				649E2B6F278416CC0023181D /* Coinbase_aavUSD_dailydata.csv in Resources */,
+				649E2B5A278416CC0023181D /* Coinbase_balUSD_dailydata.csv in Resources */,
+				649E2BA5278416CC0023181D /* Coinbase_jasUSD_dailydata.csv in Resources */,
+				649E2B59278416CC0023181D /* Coinbase_kncUSD_dailydata.csv in Resources */,
+				649E2B85278416CC0023181D /* Coinbase_qntUSD_dailydata.csv in Resources */,
+				649E2B7E278416CC0023181D /* Coinbase_ensUSD_dailydata.csv in Resources */,
+				649E2BA7278416CC0023181D /* Coinbase_powUSD_dailydata.csv in Resources */,
+				649E2B60278416CC0023181D /* Coinbase_rgtUSD_dailydata.csv in Resources */,
+				649E2B95278416CC0023181D /* Coinbase_fetUSD_dailydata.csv in Resources */,
+				649E2B2E278416CC0023181D /* Coinbase_manUSD_dailydata.csv in Resources */,
+				649E2B41278416CC0023181D /* Coinbase_yfiUSD_dailydata.csv in Resources */,
+				649E2B54278416CC0023181D /* Coinbase_snxUSD_dailydata.csv in Resources */,
+				649E2B83278416CC0023181D /* Coinbase_ideUSD_dailydata.csv in Resources */,
+				649E2B8A278416CC0023181D /* Coinbase_keeUSD_dailydata.csv in Resources */,
+				649E2B78278416CC0023181D /* Coinbase_gtcUSD_dailydata.csv in Resources */,
+				649E2BA2278416CC0023181D /* Coinbase_ltcUSD_dailydata.csv in Resources */,
+				649E2B3B278416CC0023181D /* Coinbase_alcUSD_dailydata.csv in Resources */,
+				649E2B44278416CC0023181D /* Coinbase_sklUSD_dailydata.csv in Resources */,
+				649E2B7A278416CC0023181D /* Coinbase_etcUSD_dailydata.csv in Resources */,
+				649E2B77278416CC0023181D /* Coinbase_filUSD_dailydata.csv in Resources */,
+				649E2B56278416CC0023181D /* Coinbase_cvcUSD_dailydata.csv in Resources */,
+				649E2B92278416CC0023181D /* Coinbase_dogUSD_dailydata.csv in Resources */,
+				649E2B4A278416CC0023181D /* Coinbase_rarUSD_dailydata.csv in Resources */,
+				649E2B51278416CC0023181D /* Coinbase_dotUSD_dailydata.csv in Resources */,
+				649E2B9D278416CC0023181D /* Coinbase_stoUSD_dailydata.csv in Resources */,
+				649E2B3D278416CC0023181D /* Coinbase_bonUSD_dailydata.csv in Resources */,
+				649E2B3A278416CC0023181D /* Coinbase_1inUSD_dailydata.csv in Resources */,
+				649E2B55278416CC0023181D /* Coinbase_repUSD_dailydata.csv in Resources */,
+				649E2B94278416CC0023181D /* Coinbase_ognUSD_dailydata.csv in Resources */,
+				649E2B36278416CC0023181D /* Coinbase_oxtUSD_dailydata.csv in Resources */,
+				649E2B3E278416CC0023181D /* Coinbase_umaUSD_dailydata.csv in Resources */,
+				649E2B71278416CC0023181D /* Coinbase_farUSD_dailydata.csv in Resources */,
+				649E2B42278416CC0023181D /* Coinbase_vgxUSD_dailydata.csv in Resources */,
+				649E2B99278416CC0023181D /* Coinbase_achUSD_dailydata.csv in Resources */,
+				649E2B96278416CC0023181D /* Coinbase_atoUSD_dailydata.csv in Resources */,
+				649E2B84278416CC0023181D /* Coinbase_badUSD_dailydata.csv in Resources */,
+				649E2B48278416CC0023181D /* Coinbase_trbUSD_dailydata.csv in Resources */,
+				64A64D102773F9E90076ADD6 /* Preview Assets.xcassets in Resources */,
+				649E2B72278416CC0023181D /* Coinbase_godSUSD_dailydata.csv in Resources */,
+				649E2B90278416CC0023181D /* Coinbase_linUSD_dailydata.csv in Resources */,
+				649E2B39278416CC0023181D /* Coinbase_ustUSD_dailydata.csv in Resources */,
+				649E2B6C278416CC0023181D /* Coinbase_lcxUSD_dailydata.csv in Resources */,
+				649E2BA4278416CC0023181D /* Coinbase_desUSD_dailydata.csv in Resources */,
+				649E2B80278416CC0023181D /* Coinbase_avaUSD_dailydata.csv in Resources */,
+				649E2B40278416CC0023181D /* Coinbase_truUSD_dailydata.csv in Resources */,
+				649E2B70278416CC0023181D /* Coinbase_mlnUSD_dailydata.csv in Resources */,
+				649E2B52278416CC0023181D /* Coinbase_enjUSD_dailydata.csv in Resources */,
+				649E2B37278416CC0023181D /* Coinbase_zecUSD_dailydata.csv in Resources */,
+				649E2B89278416CC0023181D /* Coinbase_adaUSD_dailydata.csv in Resources */,
+				649E2B31278416CC0023181D /* Coinbase_zrxUSD_dailydata.csv in Resources */,
+				649E2B91278416CC0023181D /* Coinbase_batUSD_dailydata.csv in Resources */,
+				649E2B4F278416CC0023181D /* Coinbase_aglUSD_dailydata.csv in Resources */,
+				649E2B7C278416CC0023181D /* Coinbase_radUSD_dailydata.csv in Resources */,
+				649E2BA1278416CC0023181D /* Coinbase_krlUSD_dailydata.csv in Resources */,
+				649E2B64278416CC0023181D /* Coinbase_ankUSD_dailydata.csv in Resources */,
+				649E2BA0278416CC0023181D /* Coinbase_ornUSD_dailydata.csv in Resources */,
+				649E2B9C278416CC0023181D /* Coinbase_eosUSD_dailydata.csv in Resources */,
+				649E2B69278416CC0023181D /* Coinbase_dasUSD_dailydata.csv in Resources */,
+				649E2B88278416CC0023181D /* Coinbase_xtzUSD_dailydata.csv in Resources */,
+				649E2B6B278416CC0023181D /* Coinbase_crvUSD_dailydata.csv in Resources */,
+				649E2B6A278416CC0023181D /* Coinbase_clvUSD_dailydata.csv in Resources */,
+				649E2B63278416CC0023181D /* Coinbase_banUSD_dailydata.csv in Resources */,
+				649E2B8F278416CC0023181D /* Coinbase_mkrUSD_dailydata.csv in Resources */,
+				649E2B6E278416CC0023181D /* Coinbase_susUSD_dailydata.csv in Resources */,
+				649E2B38278416CC0023181D /* Coinbase_axsUSD_dailydata.csv in Resources */,
+				649E2B9B278416CC0023181D /* Coinbase_raiUSD_dailydata.csv in Resources */,
+				649E2BA3278416CC0023181D /* Coinbase_arpUSD_dailydata.csv in Resources */,
+				649E2B97278416CC0023181D /* Coinbase_nknUSD_dailydata.csv in Resources */,
+				649E2B2F278416CC0023181D /* Coinbase_bntUSD_dailydata.csv in Resources */,
+				649E2B66278416CC0023181D /* Coinbase_renUSD_dailydata.csv in Resources */,
+				649E2B75278416CC0023181D /* Coinbase_plaUSD_dailydata.csv in Resources */,
+				649E2B93278416CC0023181D /* Coinbase_sukUSD_dailydata.csv in Resources */,
+				649E2B57278416CC0023181D /* Coinbase_ddxUSD_dailydata.csv in Resources */,
+				649E2B50278416CC0023181D /* Coinbase_traUSD_dailydata.csv in Resources */,
+				649E2B58278416CC0023181D /* Coinbase_polUSD_dailydata.csv in Resources */,
+				649E2B5E278416CC0023181D /* Coinbase_xlmUSD_dailydata.csv in Resources */,
+				649E2B65278416CC0023181D /* Coinbase_omgUSD_dailydata.csv in Resources */,
+				649E2B87278416CC0023181D /* Coinbase_shiUSD_dailydata.csv in Resources */,
+				649E2B68278416CC0023181D /* Coinbase_blzUSD_dailydata.csv in Resources */,
+				649E2B4E278416CC0023181D /* Coinbase_btrUSD_dailydata.csv in Resources */,
+				649E2B53278416CC0023181D /* Coinbase_rlyUSD_dailydata.csv in Resources */,
+				649E2B34278416CC0023181D /* Coinbase_wbtUSD_dailydata.csv in Resources */,
+				649E2B5F278416CC0023181D /* Coinbase_mdtUSD_dailydata.csv in Resources */,
+				649E2B67278416CC0023181D /* Coinbase_perUSD_dailydata.csv in Resources */,
+				649E2B3C278416CC0023181D /* Coinbase_algUSD_dailydata.csv in Resources */,
+				649E2BA6278416CC0023181D /* Coinbase_matUSD_dailydata.csv in Resources */,
+				649E2B82278416CC0023181D /* Coinbase_btcUSD_dailydata.csv in Resources */,
+				649E2B49278416CC0023181D /* Coinbase_grtUSD_dailydata.csv in Resources */,
+				649E2B61278416CC0023181D /* Coinbase_gyeUSD_dailydata.csv in Resources */,
+				649E2B79278416CC0023181D /* Coinbase_usdUSD_dailydata.csv in Resources */,
+				649E2B5B278416CC0023181D /* Coinbase_rbnUSD_dailydata.csv in Resources */,
+				649E2B62278416CC0023181D /* Coinbase_comUSD_dailydata.csv in Resources */,
+				649E2B45278416CC0023181D /* Coinbase_rlcUSD_dailydata.csv in Resources */,
+				649E2B4C278416CC0023181D /* Coinbase_triUSD_dailydata.csv in Resources */,
+				649E2B7D278416CC0023181D /* Coinbase_chzUSD_dailydata.csv in Resources */,
+				649E2B6D278416CC0023181D /* Coinbase_iotUSD_dailydata.csv in Resources */,
+				649E2B8C278416CC0023181D /* Coinbase_ampUSD_dailydata.csv in Resources */,
+				649E2B3F278416CC0023181D /* Coinbase_asmUSD_dailydata.csv in Resources */,
+				649E2B4D278416CC0023181D /* Coinbase_croUSD_dailydata.csv in Resources */,
+				649E2B76278416CC0023181D /* Coinbase_xyoUSD_dailydata.csv in Resources */,
+				649E2B7F278416CC0023181D /* Coinbase_quiUSD_dailydata.csv in Resources */,
+				649E2B43278416CC0023181D /* Coinbase_lrcUSD_dailydata.csv in Resources */,
+				649E2B86278416CC0023181D /* Coinbase_nmrUSD_dailydata.csv in Resources */,
+				649E2B5C278416CC0023181D /* Coinbase_dntUSD_dailydata.csv in Resources */,
+				649E2B32278416CC0023181D /* Coinbase_forUSD_dailydata.csv in Resources */,
+				649E2B30278416CC0023181D /* Coinbase_bchUSD_dailydata.csv in Resources */,
+				649E2B8B278416CC0023181D /* Coinbase_cotUSD_dailydata.csv in Resources */,
+				649E2B98278416CC0023181D /* Coinbase_lptUSD_dailydata.csv in Resources */,
+				649E2B33278416CC0023181D /* Coinbase_icpUSD_dailydata.csv in Resources */,
+				649E2B5D278416CC0023181D /* Coinbase_covUSD_dailydata.csv in Resources */,
+				649E2B9F278416CC0023181D /* Coinbase_solUSD_dailydata.csv in Resources */,
+				649E2B9A278416CC0023181D /* Coinbase_reqUSD_dailydata.csv in Resources */,
+				649E2B47278416CC0023181D /* Coinbase_speUSD_dailydata.csv in Resources */,
+				649E2B8D278416CC0023181D /* Coinbase_musUSD_dailydata.csv in Resources */,
+				64A64D0D2773F9E90076ADD6 /* Assets.xcassets in Resources */,
+				649E2B4B278416CC0023181D /* Coinbase_zenUSD_dailydata.csv in Resources */,
+				649E2B81278416CC0023181D /* Coinbase_daiUSD_dailydata.csv in Resources */,
+				649E2B7B278416CC0023181D /* Coinbase_foxUSD_dailydata.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A64D132773F9E90076ADD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A64D1D2773F9E90076ADD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		121FA8CD994FD51D1B403F59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoAnalysis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40931B18661162A683C00AC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoAnalysis-CryptoAnalysisUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4224D6C5D6276A3596FB6904 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoAnalysis/Pods-CryptoAnalysis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoAnalysis/Pods-CryptoAnalysis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoAnalysis/Pods-CryptoAnalysis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD1C01E0C4F40BE801CBBC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoAnalysis-CryptoAnalysisUITests/Pods-CryptoAnalysis-CryptoAnalysisUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoAnalysis-CryptoAnalysisUITests/Pods-CryptoAnalysis-CryptoAnalysisUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoAnalysis-CryptoAnalysisUITests/Pods-CryptoAnalysis-CryptoAnalysisUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB8A8A8563370F26F69D6AF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoAnalysisTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64A64D012773F9E60076ADD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649E29AD277C9CF40023181D /* addQuantity.swift in Sources */,
+				64F3A2C2277AB2E70084E4DE /* PredictionBuilder.swift in Sources */,
+				64A64D33277416160076ADD6 /* priceRetriever.swift in Sources */,
+				649E29A7277B1B910023181D /* PRMatrix.swift in Sources */,
+				649E29A5277B1B650023181D /* polynomialRegression.swift in Sources */,
+				649E29A9277C19B20023181D /* quantityAdd.swift in Sources */,
+				64A64D0B2773F9E60076ADD6 /* ContentView.swift in Sources */,
+				64A64D092773F9E60076ADD6 /* CryptoAnalysisApp.swift in Sources */,
+				649E29AF277F83B10023181D /* calculationDisplay.swift in Sources */,
+				64A64D3D2776C85B0076ADD6 /* addScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A64D112773F9E90076ADD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A64D1A2773F9E90076ADD6 /* CryptoAnalysisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A64D1B2773F9E90076ADD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A64D242773F9E90076ADD6 /* CryptoAnalysisUITests.swift in Sources */,
+				64A64D262773F9E90076ADD6 /* CryptoAnalysisUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64A64D172773F9E90076ADD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64A64D042773F9E60076ADD6 /* CryptoAnalysis */;
+			targetProxy = 64A64D162773F9E90076ADD6 /* PBXContainerItemProxy */;
+		};
+		64A64D212773F9E90076ADD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64A64D042773F9E60076ADD6 /* CryptoAnalysis */;
+			targetProxy = 64A64D202773F9E90076ADD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		64A64D272773F9E90076ADD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64A64D282773F9E90076ADD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64A64D2A2773F9E90076ADD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7553ADDBE210C15243BA17 /* Pods-CryptoAnalysis.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoAnalysis/Preview Content\"";
+				DEVELOPMENT_TEAM = 23T7WFGY66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.CryptoAnalysis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64A64D2B2773F9E90076ADD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E5559D7478AB6ECE0CC7A3 /* Pods-CryptoAnalysis.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoAnalysis/Preview Content\"";
+				DEVELOPMENT_TEAM = 23T7WFGY66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.CryptoAnalysis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64A64D2D2773F9E90076ADD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC7EEA51011B8AA64298098 /* Pods-CryptoAnalysisTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23T7WFGY66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.CryptoAnalysisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoAnalysis.app/CryptoAnalysis";
+			};
+			name = Debug;
+		};
+		64A64D2E2773F9E90076ADD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C30947D4A38EDF0B50B20D /* Pods-CryptoAnalysisTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23T7WFGY66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.CryptoAnalysisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoAnalysis.app/CryptoAnalysis";
+			};
+			name = Release;
+		};
+		64A64D302773F9E90076ADD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51FC2EBAEB3605F44B2B11F4 /* Pods-CryptoAnalysis-CryptoAnalysisUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23T7WFGY66;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.CryptoAnalysisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoAnalysis;
+			};
+			name = Debug;
+		};
+		64A64D312773F9E90076ADD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2096F3376615D0A4332EC24E /* Pods-CryptoAnalysis-CryptoAnalysisUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23T7WFGY66;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.CryptoAnalysisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoAnalysis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64A64D002773F9E60076ADD6 /* Build configuration list for PBXProject "CryptoAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A64D272773F9E90076ADD6 /* Debug */,
+				64A64D282773F9E90076ADD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64A64D292773F9E90076ADD6 /* Build configuration list for PBXNativeTarget "CryptoAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A64D2A2773F9E90076ADD6 /* Debug */,
+				64A64D2B2773F9E90076ADD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64A64D2C2773F9E90076ADD6 /* Build configuration list for PBXNativeTarget "CryptoAnalysisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A64D2D2773F9E90076ADD6 /* Debug */,
+				64A64D2E2773F9E90076ADD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64A64D2F2773F9E90076ADD6 /* Build configuration list for PBXNativeTarget "CryptoAnalysisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A64D302773F9E90076ADD6 /* Debug */,
+				64A64D312773F9E90076ADD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		649E299D277AC1D40023181D /* XCRemoteSwiftPackageReference "CSV.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yaslab/CSV.swift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.4.3;
+			};
+		};
+		64A64D392774A0200076ADD6 /* XCRemoteSwiftPackageReference "stock-charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/denniscm190/stock-charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		649E299E277AC1D40023181D /* CSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 649E299D277AC1D40023181D /* XCRemoteSwiftPackageReference "CSV.swift" */;
+			productName = CSV;
+		};
+		64A64D3A2774A0200076ADD6 /* StockCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64A64D392774A0200076ADD6 /* XCRemoteSwiftPackageReference "stock-charts" */;
+			productName = StockCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 64A64CFD2773F9E60076ADD6 /* Project object */;
+}

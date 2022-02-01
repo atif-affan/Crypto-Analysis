@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CSV.swift",
+        "repositoryURL": "https://github.com/yaslab/CSV.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "81d2874c51db364d7e1d71b0d99018a294c87ac1",
+          "version": "2.4.3"
+        }
+      },
+      {
+        "package": "StockCharts",
+        "repositoryURL": "https://github.com/denniscm190/stock-charts.git",
+        "state": {
+          "branch": null,
+          "revision": "5a374cada5703ae6da1e11f1b28afed2cc96984c",
+          "version": "1.2.9"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
