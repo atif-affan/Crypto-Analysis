@@ -18,8 +18,8 @@ The purpose of this App is to apply the data science skills I have gained in the
 
 ## Gallery
 
-<img src="CryptoUI/1.jpg" height="400"> <img src="CryptoUI/scoreDisplay.jpg" height="400">
-<img src="CryptoUI/2.jpg" height="400">
+<img src="CryptoUI/1.png" height="400"> <img src="CryptoUI/scoreDisplay.png" height="400">
+<img src="CryptoUI/2.png" height="400">
 
 
 
